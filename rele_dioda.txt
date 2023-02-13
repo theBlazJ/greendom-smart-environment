@@ -1,0 +1,51 @@
+#Koda napisana na podlagi vodiča: 
+    #Explaning Computers 
+    #Raspberry Pi Automation #1: Mains Relay HAT 
+    #https://www.youtube.com/watch?v=bOGltcgiXiU 
+
+ 
+#vstavimo modul  za GPIO pine in cas 
+
+import RPi.GPIO as GPIO 
+import time 
+
+
+#nastavimo pine 
+GPIO.setmode(GPIO.BCM) 
+GPIO.setup(9, GPIO.OUT) #GROUND pin 
+GPIO.setup(17, GPIO.OUT) #3.3 VCD POWER pin 
+GPIO.setup(11, GPIO.OUT) #GPIO 0 pin 
+
+
+try: 
+
+        #kadar drzi 
+        while True: 
+
+ 
+                #pin 11 ima signal, nato pocaka 3 sekunde 
+                GPIO.output(11, True) 
+                time.sleep(3) 
+
+                
+                #pin 11 nima signala, pin 9 ima signal, nato pocaka 3 sekunde 
+                GPIO.output(11, False) 
+                GPIO.output(9, True) 
+                time.sleep(3) 
+
+                 
+                #pin 9 nima signala, pin 17 ima signal, nato pocaka 3 sekunde 
+                GPIO.output(9, False) 
+                GPIO.output(17, True) 
+                time.sleep(3) 
+
+                 
+                #pin 17 nima signala 
+                GPIO.output(17, False) 
+
+ 
+finally: 
+
+        #pocisti stanje pinov in izpise besedilo 
+        GPIO.cleanup() 
+        print("Konec programa") 
