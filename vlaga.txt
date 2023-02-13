@@ -1,0 +1,10 @@
+Cas in datum: 27/01/2023 14:29:00 Temperatura:  27.2°C  Vlaga:  31.2% 
+Cas in datum: 27/01/2023 14:30:00 Temperatura:  27.8°C  Vlaga:  30.1% 
+Cas in datum: 27/01/2023 14:31:01 Temperatura:  28.3°C  Vlaga:  29.6% 
+Cas in datum: 27/01/2023 14:32:01 Temperatura:  28.4°C  Vlaga:  27.6% 
+Cas in datum: 27/01/2023 14:33:05 Temperatura:  28.1°C  Vlaga:  28.0% 
+Cas in datum: 27/01/2023 14:34:05 Temperatura:  28.0°C  Vlaga:  28.5% 
+Cas in datum: 27/01/2023 14:35:06 Temperatura:  27.9°C  Vlaga:  28.8% 
+Cas in datum: 27/01/2023 14:36:06 Temperatura:  27.9°C  Vlaga:  29.2% 
+Cas in datum: 27/01/2023 14:37:06 Temperatura:  27.9°C  Vlaga:  29.5% 
+Cas in datum: 27/01/2023 14:39:06 Temperatura:  28.3°C  Vlaga:  30.0% 
